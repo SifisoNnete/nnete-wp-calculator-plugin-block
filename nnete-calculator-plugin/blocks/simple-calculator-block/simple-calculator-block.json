@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "nn/simple-calculator-block",
+  "title": "Simple Calculator",
+  "category": "widgets",
+  "icon": "calculator",
+  "description": "A customizable calculator block.",
+  "textdomain": "nnete-calculator",
+
+  "editorScript": "file:./src/simple-calculator-block.js",
+  "editorStyle": "file:./src/simple-calculator-block-editor.css",
+  "style": "file:./src/simple-calculator-block-style.css",
+
+  "attributes": {
+    "minValue": { "type": "number", "default": 0 },
+    "maxValue": { "type": "number", "default": 100 },
+    "step": { "type": "number", "default": 1 },
+    "multiplier": { "type": "number", "default": 1 },
+
+    "label": {
+      "type": "string",
+      "default": "Calculator"
+    },
+
+    "backgroundColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "accentColor": {
+      "type": "string",
+      "default": "#007cba"
+    },
+
+    "padding": {
+      "type": "number",
+      "default": 20
+    },
+    "borderRadius": {
+      "type": "number",
+      "default": 4
+    }
+  }
+}
